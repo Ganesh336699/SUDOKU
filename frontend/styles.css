@@ -1,0 +1,88 @@
+/* frontend/style.css */
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    background-color:slategrey;
+    
+  }
+  #heading {
+    color:rgb(25, 13, 9);
+    font-family:cursive;
+    background-color: rgb(146, 188, 199);
+    width: 80%; /* Set the desired width (e.g., 80%) */
+    max-width: 400px; /* Maximum width to prevent it from getting too wide */
+    margin: 0 auto; /* Center it horizontally */
+    text-align: center;
+    margin-top: 60px;
+    border-radius: 30PX;
+
+  }
+  
+  #sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    gap: 1px;
+    justify-content: center;
+    margin: 0 auto;
+    border-right: 2px solid black;
+    width: 377px;
+   
+    
+
+  }
+
+  .cell {
+    width: 40px;
+    height: 40px;
+    border: 0.5px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(189, 183, 176);
+}
+#difficulty {
+    color: black; 
+    width : 60%;
+    max-width: 300px;
+    margin : 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    
+}
+
+#gen {
+    margin-bottom: 20px;;
+    border-radius: 5px;
+    background-color: rgb(128, 126, 163);
+
+}
+
+#footer {
+   
+   width: 80%;
+   max-width: 310px;
+   margin: 0 auto;
+   margin-top: 25px;
+   border: 2px double rgb(7, 1, 1);
+   border-radius: 50px;
+}
+#btn4,#btn5,#btn6 {
+
+    
+    height: 35px;
+    background-color: aquamarine;
+    width: 100px;
+    border-radius: 50px;
+    border: 2px double rgb(13, 2, 1);
+
+}
+.cell:nth-child(3n + 1) {
+  border-left: 2px solid black; /* Left border for every 3rd column starting from 1st */
+}
+.cell:nth-child(n+46):nth-child(-n+54),
+.cell:nth-child(n+19):nth-child(-n+27) {
+    border-bottom: 2px solid black; /* Bottom border for every 3rd row */
+}
